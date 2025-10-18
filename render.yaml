@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: agente-infinito
+    env: python
+    buildCommand: ""
+    startCommand: gunicorn agente:app
+    plan: free

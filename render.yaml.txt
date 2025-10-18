@@ -1,7 +1,6 @@
 services:
   - type: web
-    name: agente-infinito
+    name: agente
     env: python
-    buildCommand: ""
-    startCommand: gunicorn agente:app
-    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn agente:app"
