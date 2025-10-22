@@ -5,5 +5,5 @@ services:
     buildCommand: |
       python3 -m pip install --upgrade pip
       pip install -r requirements.txt
-    startCommand: gunicorn -w 2 -b 0.0.0.0:$PORT Agente:app
+    startCommand: gunicorn -w 2 -b 0.0.0.0:$PORT agente:app
     plan: free
